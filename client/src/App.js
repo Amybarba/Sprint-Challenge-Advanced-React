@@ -2,6 +2,13 @@ import React from 'react';
 import logo from '../src/womensworldcup.png';
 import './App.css';
 import CardForPlayers from './components/CardForPlayers';
+// import styled from "styled-components";
+
+// const PlayerCard = styled.div`
+// font-size: 50px;
+// `;
+
+
 
 class App extends React.Component {
   constructor() {
@@ -28,11 +35,16 @@ class App extends React.Component {
     console.log(this.state.players);
     return (
       <div>
+        {/* <PlayerCard> */}
         <header className="App-header">
           <img src={logo} className="App-logo" alt="womens world cup logo" />
-          <h1>Women's World Cup</h1>
+          <h1>Women's World Cup ⚽</h1>
         </header>
-        <CardForPlayers players={this.state.players} />
+        
+        <CardForPlayers players={this.state.players}/>
+        
+        
+        {/* </PlayerCard> */}
       </div>
     );
   }

@@ -1,5 +1,5 @@
 exports.data = [
-  { name: "Alex Morgan", country: "United States", searches: 100 },
+  { name: "⚽ Alex Morgan ⚽", country: "United States", searches: 100 },
   { name: "Megan Rapinoe", country: "United States", searches: 99 },
   { name: "Marta", country: "Brazil", searches: 18 },
   { name: "Rose Lavelle", country: "United States", searches: 11 },

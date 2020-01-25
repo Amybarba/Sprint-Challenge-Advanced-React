@@ -1,9 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+// import { render } from '@testing-library/react';
+import * as rtl from '@testing-library/react';
+import '@testing-library/jest-dom';
+// import App from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+afterEach(rtl.cleanup);
+
+it("renders without crashing", () => {
+  // const div = document.createElement('div');
 });
+
+// it("verify players name is present" , () => {
+//   const { getByText } = render(<App />);
+//   expect(getByText("World Cup Players")).toBeInTheDocument();
+// });

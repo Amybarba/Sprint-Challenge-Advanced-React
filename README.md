@@ -22,23 +22,44 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Why would you use class component over function components (removing hooks from the question)?
-- [ ] Name three lifecycle methods and their purposes.
-- [ ] What is the purpose of a custom hook?
-- [ ] Why is it important to test our apps?
+- [X] Why would you use class component over function components (removing hooks from the question)?
+
+* Because class components have access to the React functionality where as without hooks regular function components were limited.
+ i.e. you can reuse component logic 
+
+- [X] Name three lifecycle methods and their purposes.
+
+* componentDidMount - this is where your component is mounted but also using AJAX(AJAX = Asynchronous JavaScript And XML)
+(I had to look that up and Jeremiah explained that fetch and axios are basically AJAX and then it all made sense)
+ it guarantees that it will update. Also you can add event listeners, draw on elements and initialize a masonry grid with this method. It loads in data to your component.
+
+componentDidUpdate - This will allow your component to react to changes that have occurred thus update
+
+Render - This is the fun part because it shows if your coding worked to bring in the information you wanted in your class component. This is where your JSX(JavaScript Expressions)(Needed to look that up as well and understand it is basically UI written within your class component) is returned for your component.
+
+
+- [X] What is the purpose of a custom hook?
+
+* In order to create a reusable way to get information back on the behavior of your code; managing event listeners, controlled inputs, 
+This is accomplished by using the useState hook to track behavior and update result.
+
+
+- [X] Why is it important to test our apps?
+
+*  In order to get a job developing you will be asked to test and probably often. As a practice for any job testing a “finished” product is just practical and important so that you have allowed for the success of that product. Testing in coding helps find any possible bugs faster or gives you peace of mind you have not found any bugs. Much like using console log to test if your result is working testing also helps to make sure it is not breaking somewhere. Testing also helps us to trust what we have written and rewritten and allows others to see why we wrote it by providing documentation. It also improves our ability to write code. 
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add TL as collaborator on Github.
+- [X] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [X] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
 - [ ] Run `yarn` to download dependencies.
-- [ ] Run the server using `yarn start` or `node server.js`.
-- [ ] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
-- [ ] Still inside the `client` folder run `yarn start` to run the client application.
+- [X] Run the server using `yarn start` or `node server.js`.
+- [X] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
+- [X] Still inside the `client` folder run `yarn start` to run the client application.
 - [ ] Implement the project on this Branch, **committing progress & changes often.**
 - [ ] Push commits: `git push origin <firstName-lastName>`.
 
@@ -52,9 +73,11 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] Class component that fetches data from the server you now have running - the data can be fetched from `http://localhost:5000/api/players`
-- [ ] Display the player data you receive from the API
-- [ ] Build a custom hook and use it in your app - this can be a localStorage hook, a fetch hook, a dark mode hook, or any other hook you would like
+- [X] Class component that fetches data from the server you now have running - the data can be fetched from `http://localhost:5000/api/players`
+- [X] Display the player data you receive from the API
+- [X] Build a custom hook and use it in your app - this can be a 
+X localStorage hook, 
+a fetch hook, a dark mode hook, or any other hook you would like
 - [ ] Write integration tests for your React components
 
 ## Stretch Problems
